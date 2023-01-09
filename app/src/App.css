@@ -1,0 +1,10 @@
+.item .native {
+  position: relative;
+  z-index: 1;
+}
+
+.item .native::after {
+  position: relative;
+  content: "";
+  z-index: -1;
+}
