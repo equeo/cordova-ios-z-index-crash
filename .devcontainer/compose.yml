@@ -1,0 +1,10 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Containerfile
+    volumes:
+      - ../:/workspace
+      - /dev:/dev
+    privileged: true
+    entrypoint: tail -f /dev/null
